@@ -7,6 +7,7 @@ Note: Adding and enhancing features, soon to come. Adding Keyring and install.sh
 - python
 - simplejson (python package)
 - GSpread (python package)
+- keyring
 
 
 ##Setup
