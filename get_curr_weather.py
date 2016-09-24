@@ -28,8 +28,11 @@ def send(textmsg):
 	server.login(username,password)
 	server.sendmail(username,toaddrs,textmsg)
 
+def main():
+	#google sheets get workout
+	#google events
+	weather 				= get_conditions()
+	send(textmsg 			= 'Current temparture is ' + str(weather[0]) + ' in '+ str(weather[1]) + ' ' + str(weather[2]) )
 
-#google sheets get workout
-#google events
-weather 				= get_conditions()
-send(textmsg 			= 'Current temparture is ' + str(weather[0]) + ' in '+ str(weather[1]) + ' ' + str(weather[2]) )
+if __name__ == "__main__":
+	main() 
