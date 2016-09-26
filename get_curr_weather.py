@@ -1,6 +1,6 @@
-import smtplib
 import urllib2
 import simplejson as json
+from send import send
 import keyring
 
 ## add find current location
@@ -16,17 +16,6 @@ def get_conditions():
 	weather 			= parsed_forecast['forecast']['txt_forecast']['forecastday'][0]['fcttext']
 	return temp_f,location, weather
 
-def send(textmsg):
-	
-	toaddrs 			= keyring.get_password("system","myphoneemail")
-	username 			= 'dantheran7'
-	password 			= keyring.get_password("system","dantheran7@gmail.com")
-	server 				= smtplib.SMTP('smtp.gmail.com',587)
-	server.ehlo()
-	server.starttls()
-	server.ehlo()
-	server.login(username,password)
-	server.sendmail(username,toaddrs,textmsg)
 
 def main():
 	#google sheets get workout

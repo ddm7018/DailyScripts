@@ -1,6 +1,6 @@
 import gspread, datetime
 from oauth2client.service_account import ServiceAccountCredentials
-from get_curr_weather import send
+from send import send
 
 def get_workout():
 	json_key 	= 'cred.json'

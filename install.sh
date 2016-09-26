@@ -25,6 +25,12 @@ installCurrWeather(){
 }
 
 echo "Installing Daily Scripts"
+read -p "To Address: " to
+read -p "Email Id: " email
+read -p "Email Password: " pass
+python savePass.py $to $email $pass
+
+
 read -p "Install Options 
 1) Get Data From GSheet  
 2) Get Current Weather
@@ -33,7 +39,7 @@ read -p "Install Options
 if test "$option" = "1"
 then
 	installGSheet
-
+	
 elif test "$option" = "2"
 	then
 	installCurrWeather
