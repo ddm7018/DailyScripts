@@ -1,4 +1,4 @@
-# DailyScripts
+# DailyScript
 Sending you text at certain times, informing you workouts and current weather
 
 Note: Adding and enhancing features, soon to come. Adding Keyring and install.sh script soon.
