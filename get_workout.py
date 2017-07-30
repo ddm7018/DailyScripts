@@ -3,7 +3,7 @@ from oauth2client.service_account import ServiceAccountCredentials
 from send import send
 
 def get_workout():
-	json_key 	= 'cred.json'
+	json_key 	= 'new_test.json'
 	scope 		= ['https://spreadsheets.google.com/feeds']
 	credentials = ServiceAccountCredentials.from_json_keyfile_name(json_key, scope)
 	gc 			= gspread.authorize(credentials)
